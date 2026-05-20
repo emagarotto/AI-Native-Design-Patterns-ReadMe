@@ -8,9 +8,9 @@ Built by [Magarottos, Inc.](https://www.magarottos.com/) - [Pattern Hub](https:/
 
 ## What This Is
 
-Most AI implementations fail because they prioritize conversation over control. This library documents ten essential design patterns across nine industries, showing the difference between black-box automation and observable, trustworthy AI systems.
+Most AI implementations fail because they prioritize conversation over control. This library documents ten essential design patterns across eleven industries, showing the difference between black-box automation and observable, trustworthy AI systems.
 
-Each module presents a **Don't** (how AI typically gets shipped) alongside a **Do** (what a well-designed, human-in-the-loop system actually looks like) - rendered as interactive UI examples you can study, export, and adapt.
+Each module presents a **Don't** (how AI typically gets shipped) alongside a **Do** (what a well-designed, human-in-the-loop system actually looks like) — rendered as interactive UI examples you can study, export, and adapt.
 
 ---
 
@@ -46,16 +46,18 @@ Every industry page applies the same ten patterns to its domain-specific workflo
 | **Education** | Adaptive learning, assessment, student support, administration |
 | **Logistics & Supply Chain** | Route optimization, demand forecasting, warehouse operations |
 | **HR & Compliance** | Hiring, policy review, disciplinary workflows, people ops |
+| **Dental Insurance** | Claims follow-up, eligibility verification, denials, appeals, aging AR, patient billing |
+| **Marketing** | Campaign optimization, copy generation, audience targeting, budget allocation, brand governance |
 
 ---
 
 ## Tech Stack
 
 - **React 18** + **TypeScript**
-- **Vite** - build tooling
-- **Tailwind CSS** - styling
-- **Lucide React** - icons
-- **html2canvas** - PNG export per module
+- **Vite** — build tooling
+- **Tailwind CSS** — styling
+- **Lucide React** — icons
+- **html2canvas** — PNG export per module
 
 ---
 
@@ -66,7 +68,7 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:5173` to see the Pattern Hub index. Each industry is a separate route (e.g. `/finance`, `/healthcare`, `/hr`).
+Open `http://localhost:5173` to see the Pattern Hub index. Each industry is a separate route (e.g. `/finance`, `/healthcare`, `/dental`, `/martech`).
 
 ---
 
@@ -74,12 +76,13 @@ Open `http://localhost:5173` to see the Pattern Hub index. Each industry is a se
 
 ```
 src/
-  PatternHub.tsx              # Index page - links to all industries
+  PatternHub.tsx              # Index page — links to all industries
   components/
     ComparisonCard.tsx        # Don't / Do card wrapper
     ExportContainer.tsx       # Module wrapper with PNG export
     ExportButton.tsx          # Per-module export trigger
     DownloadAllButton.tsx     # Batch export all 10 modules
+    DownloadGuideButton.tsx   # Downloads full HTML implementation guide
   utils/
     imageExport.ts            # html2canvas export logic
   finance/
@@ -91,14 +94,16 @@ src/
   education/
   logistics/
   hr/
+  dental/
+  martech/
 ```
 
 Each industry folder follows the same structure:
 
 ```
-{Industry}App.tsx             # Route root - renders intro + all 10 modules in order
+{Industry}App.tsx             # Route root — renders intro + all 10 modules in order
 {Industry}IntroSection.tsx    # Hero with industry context and pattern legend
-ModuleOne.tsx - ModuleTen.tsx # One file per pattern
+ModuleOne.tsx — ModuleTen.tsx # One file per pattern
 ```
 
 ---
@@ -107,12 +112,14 @@ ModuleOne.tsx - ModuleTen.tsx # One file per pattern
 
 Every module has an **Export PNG** button that captures the Do/Don't panel as a `2x` resolution image with padding. A **Download All** button on each industry page exports all 10 modules in sequence.
 
+A **Download Implementation Guide** button on the hub page generates a self-contained HTML document covering all 110 modules across all 11 industries — with personas, contexts, and direct links.
+
 ---
 
 ## Design Notes
 
-- **Don't card** - red border, shows the failure mode and its real-world consequence
-- **Do card** - emerald border, shows the correct pattern with interactive UI where possible
+- **Don't card** — red border, shows the failure mode and its real-world consequence
+- **Do card** — emerald border, shows the correct pattern with interactive UI where possible
 - Color system uses neutral tones, blues, greens, ambers, and reds appropriate to each domain
 - 8px spacing grid throughout
 - Each module is fully self-contained with no shared state between modules
@@ -121,6 +128,6 @@ Every module has an **Export PNG** button that captures the Do/Don't panel as a 
 
 ## License
 
-MIT - use these patterns freely. Attribution appreciated.
+MIT — use these patterns freely. Attribution appreciated.
 
-(c) 2026 Magarottos, Inc.
+© 2026 Magarottos, Inc.
