@@ -2,7 +2,7 @@
 
 **180 interactive Do / Don't modules for building observable, human-in-the-loop AI systems in high-stakes enterprise workflows.**
 
-Built by [Magarottos, Inc.](https://www.magarottos.com/) — [Pattern Hub](https://www.magarottos.com/pattern-hub/)
+Built by [Magarottos, Inc.](https://www.magarottos.com/) - [Pattern Hub](https://www.magarottos.com/pattern-hub/)
 
 ---
 
