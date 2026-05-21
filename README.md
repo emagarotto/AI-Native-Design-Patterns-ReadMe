@@ -1,14 +1,14 @@
 # AI-Native Design Patterns
 
-**Side-by-side Do / Don't modules for building observable, human-in-the-loop AI systems in high-stakes enterprise workflows.**
+**180 interactive Do / Don't modules for building observable, human-in-the-loop AI systems in high-stakes enterprise workflows.**
 
-Built by [Magarottos, Inc.](https://www.magarottos.com/) - [Pattern Hub](https://www.magarottos.com/pattern-hub/)
+Built by [Magarottos, Inc.](https://www.magarottos.com/) — [Pattern Hub](https://www.magarottos.com/pattern-hub/)
 
 ---
 
 ## What This Is
 
-Most AI implementations fail because they prioritize conversation over control. This library documents ten essential design patterns across eleven industries, showing the difference between black-box automation and observable, trustworthy AI systems.
+Most AI implementations fail because they prioritize conversation over control. This library documents ten essential design patterns across 18 industries, showing the difference between black-box automation and observable, trustworthy AI systems.
 
 Each module presents a **Don't** (how AI typically gets shipped) alongside a **Do** (what a well-designed, human-in-the-loop system actually looks like) — rendered as interactive UI examples you can study, export, and adapt.
 
@@ -33,7 +33,7 @@ Every industry page applies the same ten patterns to its domain-specific workflo
 
 ---
 
-## Industries Covered
+## Industries Covered (18)
 
 | Industry | Focus Areas |
 |----------|-------------|
@@ -48,6 +48,15 @@ Every industry page applies the same ten patterns to its domain-specific workflo
 | **HR & Compliance** | Hiring, policy review, disciplinary workflows, people ops |
 | **Dental Insurance** | Claims follow-up, eligibility verification, denials, appeals, aging AR, patient billing |
 | **Marketing** | Campaign optimization, copy generation, audience targeting, budget allocation, brand governance |
+| **Real Estate & Proptech** | Property valuation, lead qualification, transaction coordination, document processing, property operations |
+| **Manufacturing** | Predictive maintenance, quality inspection, defect detection, production scheduling, operational compliance |
+| **Travel & Hospitality** | Trip planning, booking optimization, disruption recovery, personalized recommendations, guest experience |
+| **Pharma & Regulatory** | Regulatory writing, clinical documentation, compliance review, adverse event summarization, submission authoring |
+| **Customer Support & CX** | Ticket resolution, agent assist, escalation routing, feedback loops, quality assurance |
+| **Energy & Utilities** | Grid operations, predictive maintenance, demand forecasting, outage response, field work management |
+| **Construction & Infrastructure** | Permit coordination, inspection tracking, submittal review, schedule optimization, jobsite issue management |
+
+---
 
 ---
 
